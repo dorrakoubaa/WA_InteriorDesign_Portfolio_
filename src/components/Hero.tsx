@@ -13,7 +13,7 @@ const Hero = () => {
       />
       <div className="relative z-10 container mx-auto px-4 text-center text-white animate-fade-in">
         <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6 tracking-tight">
-          Sarah Mitchell
+          Wafa Ammous
         </h1>
         <p className="text-xl md:text-2xl mb-8 font-light">Interior Designer</p>
         <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto font-light opacity-90">
@@ -31,7 +31,7 @@ const Hero = () => {
           <Button
             size="lg"
             variant="outline"
-            className="border-white text-white hover:bg-white hover:text-primary font-medium"
+            className="border-white text-black hover:bg-white hover:text-primary font-medium"
             onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
           >
             View Portfolio

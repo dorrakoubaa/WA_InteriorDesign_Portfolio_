@@ -23,7 +23,7 @@ const Contact = () => {
                 href="mailto:sarah@example.com"
                 className="text-muted-foreground hover:text-accent transition-colors"
               >
-                sarah@example.com
+                ammouswafa@gmail.com
               </a>
             </div>
             <div className="flex flex-col items-center text-center">
@@ -32,10 +32,10 @@ const Contact = () => {
               </div>
               <h3 className="font-semibold mb-2 text-foreground">Phone</h3>
               <a
-                href="tel:+1234567890"
+                href="tel:+216 53 243 559"
                 className="text-muted-foreground hover:text-accent transition-colors"
               >
-                +1 (234) 567-890
+                +216 53 243 559
               </a>
             </div>
             <div className="flex flex-col items-center text-center">
@@ -43,7 +43,7 @@ const Contact = () => {
                 <MapPin className="h-6 w-6 text-accent" />
               </div>
               <h3 className="font-semibold mb-2 text-foreground">Location</h3>
-              <p className="text-muted-foreground">New York, NY</p>
+              <p className="text-muted-foreground">Route Sidi Abes Km3.5, Sfax</p>
             </div>
           </div>
           <div className="flex justify-center gap-6">

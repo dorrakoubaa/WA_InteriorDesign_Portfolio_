@@ -13,7 +13,7 @@ const Index = () => {
       <Portfolio />
       <Contact />
       <footer className="bg-primary text-primary-foreground py-8 text-center">
-        <p className="text-sm">© 2024 Sarah Mitchell Interior Design. All rights reserved.</p>
+        <p className="text-sm">© 2024 Wafa Ammous Interior Design. All rights reserved.</p>
       </footer>
     </div>
   );
