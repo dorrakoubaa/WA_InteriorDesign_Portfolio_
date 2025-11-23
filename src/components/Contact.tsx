@@ -20,10 +20,10 @@ const Contact = () => {
               </div>
               <h3 className="font-semibold mb-2 text-foreground">Email</h3>
               <a
-                href="mailto:sarah@example.com"
+                href="mailto:ammouswafa2@gmail.com"
                 className="text-muted-foreground hover:text-accent transition-colors"
               >
-                ammouswafa@gmail.com
+                ammouswafa2@gmail.com
               </a>
             </div>
             <div className="flex flex-col items-center text-center">
@@ -43,7 +43,12 @@ const Contact = () => {
                 <MapPin className="h-6 w-6 text-accent" />
               </div>
               <h3 className="font-semibold mb-2 text-foreground">Location</h3>
-              <p className="text-muted-foreground">Route Sidi Abes Km3.5, Sfax</p>
+              <a
+                href="https://maps.app.goo.gl/D59wKRv5yhFKrK1t7"
+                className="text-muted-foreground hover:text-accent transition-colors"
+              >
+                Route Sidi Abes Km3.5, Sfax
+              </a>
             </div>
           </div>
           <div className="flex justify-center gap-6">
@@ -53,7 +58,7 @@ const Contact = () => {
               className="rounded-full border-accent text-accent hover:bg-accent hover:text-accent-foreground"
               asChild
             >
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/w.a.interior.designer?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
                 <Instagram className="h-5 w-5" />
               </a>
             </Button>
