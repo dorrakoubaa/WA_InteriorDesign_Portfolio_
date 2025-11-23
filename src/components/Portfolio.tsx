@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import portfolio1 from "@/assets/portfolio-1.jpg";
 import portfolio2 from "@/assets/portfolio-2.jpg";
 import portfolio3 from "@/assets/portfolio-3.jpg";
@@ -21,66 +22,79 @@ import {
 
 const projects = [
   {
+    id: "1",
     image: portfolio1,
     title: "Modern Bedroom Retreat",
     category: "Residential",
   },
   {
+    id: "2",
     image: portfolio2,
     title: "Contemporary Kitchen",
     category: "Residential",
   },
   {
+    id: "3",
     image: portfolio3,
     title: "Minimalist Living Space",
     category: "Residential",
   },
   {
+    id: "4",
     image: portfolio4,
     title: "Luxury Living Room",
     category: "Residential",
   },
   {
+    id: "5",
     image: portfolio5,
     title: "Serene Bedroom",
     category: "Residential",
   },
   {
+    id: "6",
     image: portfolio6,
     title: "Modern Kitchen Design",
     category: "Residential",
   },
   {
+    id: "7",
     image: portfolio7,
     title: "Elegant Dining Room",
     category: "Residential",
   },
   {
+    id: "8",
     image: portfolio8,
     title: "Home Office Sanctuary",
     category: "Residential",
   },
   {
+    id: "9",
     image: portfolio9,
     title: "Spa-Like Bathroom",
     category: "Residential",
   },
   {
+    id: "10",
     image: portfolio10,
     title: "Grand Entryway",
     category: "Residential",
   },
   {
+    id: "11",
     image: portfolio11,
     title: "Classic Lounge",
     category: "Residential",
   },
   {
+    id: "12",
     image: portfolio12,
     title: "Luxury Walk-In Closet",
     category: "Residential",
   },
   {
+    id: "13",
     image: portfolio13,
     title: "Outdoor Living Space",
     category: "Residential",
@@ -88,6 +102,8 @@ const projects = [
 ];
 
 const Portfolio = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="portfolio" className="py-20 md:py-32 px-4">
       <div className="container mx-auto max-w-6xl">
@@ -106,7 +122,8 @@ const Portfolio = () => {
             {projects.map((project, index) => (
               <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
                 <div
-                  className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
+                  onClick={() => navigate(`/project/${project.id}`)}
                 >
                   <div className="aspect-square overflow-hidden">
                     <img
