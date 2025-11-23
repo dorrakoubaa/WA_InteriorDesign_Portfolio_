@@ -3,6 +3,7 @@ import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { useState } from "react";
+import Contact from "@/components/Contact";
 import portfolio1 from "@/assets/portfolio-1.jpg";
 import portfolio2 from "@/assets/portfolio-2.jpg";
 import portfolio3 from "@/assets/portfolio-3.jpg";
@@ -309,26 +310,9 @@ const ProjectDetail = () => {
           </DialogContent>
         </Dialog>
 
-        {/* CTA */}
-        <div className="mt-16 text-center animate-slide-up" style={{ animationDelay: "0.3s" }}>
-          <h3 className="font-serif text-2xl md:text-3xl font-bold mb-4 text-foreground">
-            Ready to Transform Your Space?
-          </h3>
-          <p className="text-muted-foreground mb-6">
-            Let's discuss your vision and bring it to life.
-          </p>
-          <Button
-            size="lg"
-            className="bg-accent hover:bg-accent/90 text-accent-foreground"
-            onClick={() => {
-              navigate("/");
-              setTimeout(() => {
-                document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
-              }, 100);
-            }}
-          >
-            Get in Touch
-          </Button>
+        {/* Contact Section */}
+        <div className="mt-16 -mx-4">
+          <Contact />
         </div>
       </main>
 
