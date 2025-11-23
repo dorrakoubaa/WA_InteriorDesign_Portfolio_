@@ -32,6 +32,7 @@ const projectsData = [
     category: "Residential",
     mainImage: portfolio1,
     additionalImages: [portfolio2, portfolio3, portfolio4, portfolio5, portfolio6, portfolio7],
+    videos: [],
     description: "A sophisticated bedroom design that combines modern aesthetics with ultimate comfort. This project features custom-built furniture, carefully selected textiles, and a harmonious color palette that creates a peaceful sanctuary for rest and relaxation.",
     details: {
       area: "350 sq ft",
@@ -45,6 +46,7 @@ const projectsData = [
     category: "Residential",
     mainImage: portfolio2,
     additionalImages: [portfolio6, portfolio1, portfolio3, portfolio8, portfolio9, portfolio10],
+    videos: [],
     description: "A cutting-edge kitchen design featuring state-of-the-art appliances and premium materials. The space maximizes functionality while maintaining an elegant aesthetic with custom cabinetry and thoughtful storage solutions.",
     details: {
       area: "280 sq ft",
@@ -58,6 +60,7 @@ const projectsData = [
     category: "Residential",
     mainImage: portfolio3,
     additionalImages: [portfolio4, portfolio5, portfolio1],
+    videos: [],
     description: "An open-concept living area that embraces minimalist design principles. Clean lines, neutral tones, and carefully curated furnishings create a serene environment perfect for modern living.",
     details: {
       area: "450 sq ft",
@@ -71,6 +74,7 @@ const projectsData = [
     category: "Residential",
     mainImage: portfolio4,
     additionalImages: [portfolio11, portfolio3, portfolio7],
+    videos: [],
     description: "A grand living room design featuring sophisticated furniture, elegant lighting fixtures, and rich textures. The space balances luxury with comfort, creating an inviting atmosphere for entertaining and relaxation.",
     details: {
       area: "520 sq ft",
@@ -84,6 +88,7 @@ const projectsData = [
     category: "Residential",
     mainImage: portfolio5,
     additionalImages: [portfolio1, portfolio8, portfolio10],
+    videos: [],
     description: "A tranquil bedroom retreat inspired by natural materials and soft color palettes. Every element is chosen to promote rest and peace, from the organic textiles to the carefully positioned lighting.",
     details: {
       area: "320 sq ft",
@@ -97,6 +102,7 @@ const projectsData = [
     category: "Residential",
     mainImage: portfolio6,
     additionalImages: [portfolio2, portfolio7, portfolio9],
+    videos: [],
     description: "An innovative kitchen featuring sage green cabinetry paired with marble countertops and brass fixtures. The design seamlessly blends style and functionality for the modern home chef.",
     details: {
       area: "300 sq ft",
@@ -110,6 +116,7 @@ const projectsData = [
     category: "Residential",
     mainImage: portfolio7,
     additionalImages: [portfolio11, portfolio4, portfolio6],
+    videos: [],
     description: "A formal dining space featuring a stunning crystal chandelier, luxurious seating, and refined wall treatments. Perfect for hosting memorable dinner parties in an atmosphere of timeless elegance.",
     details: {
       area: "380 sq ft",
@@ -123,6 +130,7 @@ const projectsData = [
     category: "Residential",
     mainImage: portfolio8,
     additionalImages: [portfolio5, portfolio10, portfolio3],
+    videos: [],
     description: "A productive workspace designed with built-in bookshelves, natural light, and comfortable furnishings. The sage green tones and plant life create an inspiring environment for focused work.",
     details: {
       area: "220 sq ft",
@@ -136,6 +144,7 @@ const projectsData = [
     category: "Residential",
     mainImage: portfolio9,
     additionalImages: [portfolio5, portfolio1, portfolio8],
+    videos: [],
     description: "A luxurious bathroom retreat featuring natural stone, ambient lighting, and spa-quality fixtures. Every detail is crafted to create a personal sanctuary for relaxation and self-care.",
     details: {
       area: "180 sq ft",
@@ -149,6 +158,7 @@ const projectsData = [
     category: "Residential",
     mainImage: portfolio10,
     additionalImages: [portfolio8, portfolio11, portfolio4],
+    videos: [],
     description: "A welcoming entrance featuring a statement mirror, elegant console table, and artistic lighting. This space sets the tone for the entire home with its sophisticated design elements.",
     details: {
       area: "150 sq ft",
@@ -162,6 +172,7 @@ const projectsData = [
     category: "Residential",
     mainImage: portfolio11,
     additionalImages: [portfolio4, portfolio7, portfolio13],
+    videos: [],
     description: "An elegant lounge space with classical architectural details, refined furniture, and a sophisticated color palette. Perfect for intimate gatherings and quiet contemplation.",
     details: {
       area: "480 sq ft",
@@ -175,6 +186,7 @@ const projectsData = [
     category: "Residential",
     mainImage: portfolio12,
     additionalImages: [portfolio1, portfolio5, portfolio9],
+    videos: [],
     description: "An organized luxury storage space featuring custom cabinetry in sage green tones, elegant lighting, and premium finishes. Every detail is designed for both beauty and functionality.",
     details: {
       area: "200 sq ft",
@@ -188,6 +200,7 @@ const projectsData = [
     category: "Residential",
     mainImage: portfolio13,
     additionalImages: [portfolio3, portfolio4, portfolio11],
+    videos: [],
     description: "A comfortable outdoor patio designed for year-round enjoyment. Features weather-resistant furniture, ambient lighting, and lush greenery that extends the living space into nature.",
     details: {
       area: "400 sq ft",
@@ -315,6 +328,32 @@ const ProjectDetail = () => {
             <CarouselNext className="right-0" />
           </Carousel>
         </div>
+
+        {/* Project Videos */}
+        {project.videos && project.videos.length > 0 && (
+          <div className="mt-12 animate-slide-up" style={{ animationDelay: "0.3s" }}>
+            <h2 className="font-serif text-3xl font-bold mb-6 text-foreground">
+              Project Videos
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {project.videos.map((videoUrl, index) => (
+                <div
+                  key={index}
+                  className="relative overflow-hidden rounded-lg shadow-lg bg-secondary/20"
+                >
+                  <video
+                    controls
+                    className="w-full h-auto rounded-lg"
+                    poster={project.mainImage}
+                  >
+                    <source src={videoUrl} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Image Lightbox Dialog */}
         <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
