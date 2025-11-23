@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Instagram, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram, Facebook } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Contact = () => {
@@ -72,8 +72,8 @@ const Contact = () => {
               className="rounded-full border-accent text-accent hover:bg-accent hover:text-accent-foreground"
               asChild
             >
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                <Linkedin className="h-5 w-5" />
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <Facebook className="h-5 w-5" />
               </a>
             </Button>
           </div>
