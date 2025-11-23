@@ -35,7 +35,7 @@ const Contact = () => {
               <div className="bg-accent/10 p-4 rounded-full mb-4 group-hover:bg-accent/20 transition-colors cursor-pointer">
                 <Phone className="h-6 w-6 text-accent" />
               </div>
-              <h3 className="font-semibold mb-2 text-foreground">Phone</h3>
+              <h3 className="font-semibold mb-2 text-foreground">WhatsApp</h3>
               <span className="text-muted-foreground group-hover:text-accent transition-colors">
                 +216 53 243 559
               </span>
