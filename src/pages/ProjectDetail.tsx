@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { ArrowLeft, X } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { useState } from "react";
@@ -299,23 +299,13 @@ const ProjectDetail = () => {
         {/* Image Lightbox Dialog */}
         <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
           <DialogContent className="max-w-5xl w-full p-0 overflow-hidden bg-accent border-none">
-            <div className="relative">
-              <Button
-                variant="ghost"
-                size="icon"
-                className="absolute top-4 right-4 z-10 text-foreground hover:bg-background/20"
-                onClick={() => setSelectedImage(null)}
-              >
-                <X className="h-6 w-6" />
-              </Button>
-              {selectedImage && (
-                <img
-                  src={selectedImage}
-                  alt={project.title}
-                  className="w-full max-h-[85vh] object-contain"
-                />
-              )}
-            </div>
+            {selectedImage && (
+              <img
+                src={selectedImage}
+                alt={project.title}
+                className="w-full max-h-[85vh] object-contain"
+              />
+            )}
           </DialogContent>
         </Dialog>
 
