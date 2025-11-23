@@ -4,6 +4,13 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { useState } from "react";
 import Contact from "@/components/Contact";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import portfolio1 from "@/assets/portfolio-1.jpg";
 import portfolio2 from "@/assets/portfolio-2.jpg";
 import portfolio3 from "@/assets/portfolio-3.jpg";
@@ -24,7 +31,7 @@ const projectsData = [
     title: "Modern Bedroom Retreat",
     category: "Residential",
     mainImage: portfolio1,
-    additionalImages: [portfolio2, portfolio3, portfolio4],
+    additionalImages: [portfolio2, portfolio3, portfolio4, portfolio5, portfolio6, portfolio7],
     description: "A sophisticated bedroom design that combines modern aesthetics with ultimate comfort. This project features custom-built furniture, carefully selected textiles, and a harmonious color palette that creates a peaceful sanctuary for rest and relaxation.",
     details: {
       area: "350 sq ft",
@@ -37,7 +44,7 @@ const projectsData = [
     title: "Contemporary Kitchen",
     category: "Residential",
     mainImage: portfolio2,
-    additionalImages: [portfolio6, portfolio1, portfolio3],
+    additionalImages: [portfolio6, portfolio1, portfolio3, portfolio8, portfolio9, portfolio10],
     description: "A cutting-edge kitchen design featuring state-of-the-art appliances and premium materials. The space maximizes functionality while maintaining an elegant aesthetic with custom cabinetry and thoughtful storage solutions.",
     details: {
       area: "280 sq ft",
@@ -275,26 +282,31 @@ const ProjectDetail = () => {
           <h2 className="font-serif text-3xl font-bold mb-6 text-foreground">
             Project Gallery
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {project.additionalImages.map((image, index) => (
-              <div
-                key={index}
-                className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer"
-                onClick={() => setSelectedImage(image)}
-              >
-                <img
-                  src={image}
-                  alt={`${project.title} - View ${index + 1}`}
-                  className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
-                  <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm font-medium">
-                    Click to enlarge
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
+          <Carousel className="w-full">
+            <CarouselContent className="-ml-4">
+              {project.additionalImages.map((image, index) => (
+                <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                  <div
+                    className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+                    onClick={() => setSelectedImage(image)}
+                  >
+                    <img
+                      src={image}
+                      alt={`${project.title} - View ${index + 1}`}
+                      className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                      <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm font-medium">
+                        Click to enlarge
+                      </span>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-0" />
+            <CarouselNext className="right-0" />
+          </Carousel>
         </div>
 
         {/* Image Lightbox Dialog */}
