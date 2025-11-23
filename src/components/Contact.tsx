@@ -14,42 +14,44 @@ const Contact = () => {
             Ready to transform your space? Let's discuss your vision and bring it to life.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <div className="flex flex-col items-center text-center">
-              <div className="bg-accent/10 p-4 rounded-full mb-4">
+            <a
+              href="mailto:ammouswafa2@gmail.com"
+              className="flex flex-col items-center text-center group"
+            >
+              <div className="bg-accent/10 p-4 rounded-full mb-4 group-hover:bg-accent/20 transition-colors cursor-pointer">
                 <Mail className="h-6 w-6 text-accent" />
               </div>
               <h3 className="font-semibold mb-2 text-foreground">Email</h3>
-              <a
-                href="mailto:ammouswafa2@gmail.com"
-                className="text-muted-foreground hover:text-accent transition-colors"
-              >
+              <span className="text-muted-foreground group-hover:text-accent transition-colors">
                 ammouswafa2@gmail.com
-              </a>
-            </div>
-            <div className="flex flex-col items-center text-center">
-              <div className="bg-accent/10 p-4 rounded-full mb-4">
+              </span>
+            </a>
+            <a
+              href="tel:+216 53 243 559"
+              className="flex flex-col items-center text-center group"
+            >
+              <div className="bg-accent/10 p-4 rounded-full mb-4 group-hover:bg-accent/20 transition-colors cursor-pointer">
                 <Phone className="h-6 w-6 text-accent" />
               </div>
               <h3 className="font-semibold mb-2 text-foreground">Phone</h3>
-              <a
-                href="tel:+216 53 243 559"
-                className="text-muted-foreground hover:text-accent transition-colors"
-              >
+              <span className="text-muted-foreground group-hover:text-accent transition-colors">
                 +216 53 243 559
-              </a>
-            </div>
-            <div className="flex flex-col items-center text-center">
-              <div className="bg-accent/10 p-4 rounded-full mb-4">
+              </span>
+            </a>
+            <a
+              href="https://maps.app.goo.gl/D59wKRv5yhFKrK1t7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center text-center group"
+            >
+              <div className="bg-accent/10 p-4 rounded-full mb-4 group-hover:bg-accent/20 transition-colors cursor-pointer">
                 <MapPin className="h-6 w-6 text-accent" />
               </div>
               <h3 className="font-semibold mb-2 text-foreground">Location</h3>
-              <a
-                href="https://maps.app.goo.gl/D59wKRv5yhFKrK1t7"
-                className="text-muted-foreground hover:text-accent transition-colors"
-              >
+              <span className="text-muted-foreground group-hover:text-accent transition-colors">
                 Route Sidi Abes Km3.5, Sfax
-              </a>
-            </div>
+              </span>
+            </a>
           </div>
           <div className="flex justify-center gap-6">
             <Button
