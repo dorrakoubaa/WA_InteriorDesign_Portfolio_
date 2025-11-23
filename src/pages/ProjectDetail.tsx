@@ -11,29 +11,44 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import portfolio1 from "@/assets/portfolio-1.jpg";
-import portfolio2 from "@/assets/portfolio-2.jpg";
-import portfolio3 from "@/assets/portfolio-3.jpg";
-import portfolio4 from "@/assets/portfolio-4.jpg";
-import portfolio5 from "@/assets/portfolio-5.jpg";
-import portfolio6 from "@/assets/portfolio-6.jpg";
-import portfolio7 from "@/assets/portfolio-7.jpg";
-import portfolio8 from "@/assets/portfolio-8.jpg";
-import portfolio9 from "@/assets/portfolio-9.jpg";
-import portfolio10 from "@/assets/portfolio-10.jpg";
-import portfolio11 from "@/assets/portfolio-11.jpg";
-import portfolio12 from "@/assets/portfolio-12.jpg";
-import portfolio13 from "@/assets/portfolio-13.jpg";
+
+
+import BedRoom1_1 from "@/assets/BedRoom1_1.jpg";
+import BedRoom1_2 from "@/assets/BedRoom1_2.jpg";
+import BedRoom1_3 from "@/assets/BedRoom1_3.jpg";
+
+import BedRoom2_1 from "@/assets/BedRoom2_1.jpg";
+import BedRoom2_2 from "@/assets/BedRoom2_2.jpg";
+import BedRoom2_3 from "@/assets/BedRoom2_3.jpg";
+
+import Kitchen1_1 from "@/assets/Kitchen1_1.jpg";
+import Kitchen1_2 from "@/assets/Kitchen1_2.jpg";
+import Kitchen1_3 from "@/assets/Kitchen1_3.jpg";
+
+import LivingRoom1_1 from "@/assets/LivingRoom1_1.jpg";
+import LivingRoom1_2 from "@/assets/LivingRoom1_2.jpg";
+
+import EntryWay1_1 from "@/assets/EntryWay1_1.jpg";
+import EntryWay1_2 from "@/assets/EntryWay1_2.jpg";
+
+import BedRoom3_1 from "@/assets/BedRoom3_1.jpg";
+import BedRoom3_2 from "@/assets/BedRoom3_2.jpg";
+import BedRoom3_3 from "@/assets/BedRoom3_3.jpg";
+
+import Bathroom1_1 from "@/assets/Bathroom1_1.jpg";
+import Bathroom1_2 from "@/assets/Bathroom1_2.jpg";
+
+import Laundry from "@/assets/Laundry.jpg";
 
 const projectsData = [
   {
     id: "1",
-    title: "Modern Bedroom Retreat",
+    title: "Harmony Haven Bedroom",
     category: "Residential",
-    mainImage: portfolio1,
-    additionalImages: [portfolio2, portfolio3, portfolio4, portfolio5, portfolio6, portfolio7],
+    mainImage: BedRoom1_1,
+    additionalImages: [BedRoom1_1,BedRoom1_2, BedRoom1_3],
     videos: [],
-    description: "A sophisticated bedroom design that combines modern aesthetics with ultimate comfort. This project features custom-built furniture, carefully selected textiles, and a harmonious color palette that creates a peaceful sanctuary for rest and relaxation.",
+    description: "This design celebrates harmony through natural textures, soft neutrals, and elegant geometric accents. A panoramic window opens the room to nature, enhancing its calm and airy feel. The tailored furniture and gentle lighting add a layer of luxury that transforms everyday rest into a soothing escape.",
     details: {
       area: "350 sq ft",
       year: "2024",
@@ -42,12 +57,12 @@ const projectsData = [
   },
   {
     id: "2",
-    title: "Contemporary Kitchen",
+    title: "Natural Calm Bedroom",
     category: "Residential",
-    mainImage: portfolio2,
-    additionalImages: [portfolio6, portfolio1, portfolio3, portfolio8, portfolio9, portfolio10],
+    mainImage: BedRoom2_1,
+    additionalImages: [BedRoom2_1,BedRoom2_2, BedRoom2_3],
     videos: [],
-    description: "A cutting-edge kitchen design featuring state-of-the-art appliances and premium materials. The space maximizes functionality while maintaining an elegant aesthetic with custom cabinetry and thoughtful storage solutions.",
+    description: "A soothing blend of soft neutrals, warm wood textures, and minimalist lines. This bedroom was designed to embrace natural daylight, creating a calm and refreshing atmosphere. The vertical wooden slats add warmth and rhythm, while simple pendant lighting enhances the modern serenity of the space.",
     details: {
       area: "280 sq ft",
       year: "2024",
@@ -56,12 +71,12 @@ const projectsData = [
   },
   {
     id: "3",
-    title: "Minimalist Living Space",
+    title: "Organic Modern Kitchen",
     category: "Residential",
-    mainImage: portfolio3,
-    additionalImages: [portfolio4, portfolio5, portfolio1],
+    mainImage: Kitchen1_1,
+    additionalImages: [Kitchen1_1, Kitchen1_2, Kitchen1_3],
     videos: [],
-    description: "An open-concept living area that embraces minimalist design principles. Clean lines, neutral tones, and carefully curated furnishings create a serene environment perfect for modern living.",
+    description: "A harmonious fusion of organic wood textures and modern finishes. The curved kitchen peninsula and vertical wood slats add movement and character, while the built-in wine storage and sleek lighting bring a touch of contemporary luxury. Perfect for clients who appreciate functional beauty and natural comfort.",
     details: {
       area: "450 sq ft",
       year: "2024",
@@ -72,10 +87,10 @@ const projectsData = [
     id: "4",
     title: "Luxury Living Room",
     category: "Residential",
-    mainImage: portfolio4,
-    additionalImages: [portfolio11, portfolio3, portfolio7],
+    mainImage: LivingRoom1_1,
+    additionalImages: [LivingRoom1_1, LivingRoom1_2],
     videos: [],
-    description: "A grand living room design featuring sophisticated furniture, elegant lighting fixtures, and rich textures. The space balances luxury with comfort, creating an inviting atmosphere for entertaining and relaxation.",
+    description: "A bright, minimalist open-plan living room blending Scandinavian clean lines with soft Japanese serenity: white tones, warm wood, bold line-art, neon accents, and lush greenery for a calm, elegant everyday escape.",
     details: {
       area: "520 sq ft",
       year: "2024",
@@ -84,12 +99,12 @@ const projectsData = [
   },
   {
     id: "5",
-    title: "Serene Bedroom",
+    title: "Entryway Elegance",
     category: "Residential",
-    mainImage: portfolio5,
-    additionalImages: [portfolio1, portfolio8, portfolio10],
+    mainImage: EntryWay1_1,
+    additionalImages: [EntryWay1_1, EntryWay1_2],
     videos: [],
-    description: "A tranquil bedroom retreat inspired by natural materials and soft color palettes. Every element is chosen to promote rest and peace, from the organic textiles to the carefully positioned lighting.",
+    description: "A warm minimalist entryway that welcomes with quiet elegance: light oak beams and accents frame a serene palette of white and natural textures. An arched mirror, sculptural pendant lights, and lush greenery create a peaceful transition from the outside world into a calm, contemporary home.",
     details: {
       area: "320 sq ft",
       year: "2024",
@@ -98,12 +113,12 @@ const projectsData = [
   },
   {
     id: "6",
-    title: "Modern Kitchen Design",
+    title: "Embrace Room",
     category: "Residential",
-    mainImage: portfolio6,
-    additionalImages: [portfolio2, portfolio7, portfolio9],
+    mainImage: BedRoom3_1,
+    additionalImages: [BedRoom3_1, BedRoom3_2, BedRoom3_3],
     videos: [],
-    description: "An innovative kitchen featuring sage green cabinetry paired with marble countertops and brass fixtures. The design seamlessly blends style and functionality for the modern home chef.",
+    description: "A soft, intimate bedroom wrapped in warm beige tones and natural oak. Minimalist line-art duo above a floating headboard, gentle pampas accents, and the quiet promise of “Together Forever” create a serene, romantic retreat perfect for slow mornings and peaceful nights.",
     details: {
       area: "300 sq ft",
       year: "2024",
@@ -112,38 +127,10 @@ const projectsData = [
   },
   {
     id: "7",
-    title: "Elegant Dining Room",
+    title: "Bathroom",
     category: "Residential",
-    mainImage: portfolio7,
-    additionalImages: [portfolio11, portfolio4, portfolio6],
-    videos: [],
-    description: "A formal dining space featuring a stunning crystal chandelier, luxurious seating, and refined wall treatments. Perfect for hosting memorable dinner parties in an atmosphere of timeless elegance.",
-    details: {
-      area: "380 sq ft",
-      year: "2024",
-      location: "Sfax, Tunisia",
-    },
-  },
-  {
-    id: "8",
-    title: "Home Office Sanctuary",
-    category: "Residential",
-    mainImage: portfolio8,
-    additionalImages: [portfolio5, portfolio10, portfolio3],
-    videos: [],
-    description: "A productive workspace designed with built-in bookshelves, natural light, and comfortable furnishings. The sage green tones and plant life create an inspiring environment for focused work.",
-    details: {
-      area: "220 sq ft",
-      year: "2024",
-      location: "Sfax, Tunisia",
-    },
-  },
-  {
-    id: "9",
-    title: "Spa-Like Bathroom",
-    category: "Residential",
-    mainImage: portfolio9,
-    additionalImages: [portfolio5, portfolio1, portfolio8],
+    mainImage: Bathroom1_1,
+    additionalImages: [Bathroom1_1, Bathroom1_2],
     videos: [],
     description: "A luxurious bathroom retreat featuring natural stone, ambient lighting, and spa-quality fixtures. Every detail is crafted to create a personal sanctuary for relaxation and self-care.",
     details: {
@@ -153,61 +140,20 @@ const projectsData = [
     },
   },
   {
-    id: "10",
-    title: "Grand Entryway",
+    id: "8",
+    title: "Laundry Retreat",
     category: "Residential",
-    mainImage: portfolio10,
-    additionalImages: [portfolio8, portfolio11, portfolio4],
+    mainImage: Laundry,
+    additionalImages: [Laundry],
     videos: [],
-    description: "A welcoming entrance featuring a statement mirror, elegant console table, and artistic lighting. This space sets the tone for the entire home with its sophisticated design elements.",
+    description: "A serene, hotel-inspired laundry nook seamlessly integrated into the bedroom suite. Warm oak cabinetry with soft LED glow, matte black fixtures, and clever hidden storage turn a functional space into a calm, elegant ritual corner.",
     details: {
-      area: "150 sq ft",
+      area: "220 sq ft",
       year: "2024",
       location: "Sfax, Tunisia",
     },
   },
-  {
-    id: "11",
-    title: "Classic Lounge",
-    category: "Residential",
-    mainImage: portfolio11,
-    additionalImages: [portfolio4, portfolio7, portfolio13],
-    videos: [],
-    description: "An elegant lounge space with classical architectural details, refined furniture, and a sophisticated color palette. Perfect for intimate gatherings and quiet contemplation.",
-    details: {
-      area: "480 sq ft",
-      year: "2024",
-      location: "Sfax, Tunisia",
-    },
-  },
-  {
-    id: "12",
-    title: "Luxury Walk-In Closet",
-    category: "Residential",
-    mainImage: portfolio12,
-    additionalImages: [portfolio1, portfolio5, portfolio9],
-    videos: [],
-    description: "An organized luxury storage space featuring custom cabinetry in sage green tones, elegant lighting, and premium finishes. Every detail is designed for both beauty and functionality.",
-    details: {
-      area: "200 sq ft",
-      year: "2024",
-      location: "Sfax, Tunisia",
-    },
-  },
-  {
-    id: "13",
-    title: "Outdoor Living Space",
-    category: "Residential",
-    mainImage: portfolio13,
-    additionalImages: [portfolio3, portfolio4, portfolio11],
-    videos: [],
-    description: "A comfortable outdoor patio designed for year-round enjoyment. Features weather-resistant furniture, ambient lighting, and lush greenery that extends the living space into nature.",
-    details: {
-      area: "400 sq ft",
-      year: "2024",
-      location: "Sfax, Tunisia",
-    },
-  },
+
 ];
 
 const ProjectDetail = () => {
@@ -271,15 +217,6 @@ const ProjectDetail = () => {
           </div>
         </div>
 
-        {/* Main Image */}
-        <div className="mb-12 animate-slide-up">
-          <img
-            src={project.mainImage}
-            alt={project.title}
-            className="w-full h-[500px] md:h-[600px] object-cover rounded-lg shadow-elegant"
-          />
-        </div>
-
         {/* Description */}
         <div className="mb-12 animate-slide-up" style={{ animationDelay: "0.1s" }}>
           <h2 className="font-serif text-3xl font-bold mb-6 text-foreground">
@@ -304,7 +241,7 @@ const ProjectDetail = () => {
           >
             <CarouselContent className="-ml-4">
               {project.additionalImages.map((image, index) => (
-                <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                <CarouselItem key={index} className="mb-12 animate-slide-up">
                   <div
                     className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer bg-background"
                     onClick={() => setSelectedImage(image)}
@@ -312,14 +249,9 @@ const ProjectDetail = () => {
                     <img
                       src={image}
                       alt={`${project.title} - View ${index + 1}`}
-                      className="w-full h-80 object-cover transition-all duration-500 group-hover:scale-110"
+                      className="w-full h-[500px] md:h-[600px] object-cover rounded-lg shadow-elegant"
                       loading="lazy"
                     />
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
-                      <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm font-medium">
-                        Click to enlarge
-                      </span>
-                    </div>
                   </div>
                 </CarouselItem>
               ))}
