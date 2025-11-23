@@ -27,7 +27,9 @@ const Contact = () => {
               </span>
             </a>
             <a
-              href="tel:+216 53 243 559"
+              href="https://wa.me/21653243559"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex flex-col items-center text-center group"
             >
               <div className="bg-accent/10 p-4 rounded-full mb-4 group-hover:bg-accent/20 transition-colors cursor-pointer">
